@@ -5,9 +5,9 @@ import TodoItem from "./TodoItem"
 const Crud = () => {
 
     const todoList = useSelector(state=>state.todo.list)
-    const loopTodo = todoList.map((todo)=>(
+    const loopTodo = todoList.map((todo,i)=>(
     
-        <TodoItem task={todo.name} id={todo.id} key={todo.id}/>
+        <TodoItem task={todo.name} id={todo.id} number={i+1} key={todo.id}/>
     ))
   return (
     <div className="container">

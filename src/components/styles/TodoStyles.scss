@@ -1,0 +1,20 @@
+.todo__item{
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: aquamarine;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 15px 20px;
+}
+
+.todo__btn{
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 5px 10px;
+}

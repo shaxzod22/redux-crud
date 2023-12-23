@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import todoReducer from './slice/todo'
+import counrtyReducer from './slice/Country'
+
+
 
 const rootReducer = {
-    todo:todoReducer
+    news:counrtyReducer
 }
 
 const store = configureStore({

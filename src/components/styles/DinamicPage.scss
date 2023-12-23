@@ -1,0 +1,41 @@
+.dinamicPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    &__container{
+        max-width: 1240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       gap: 40px;
+    }
+
+    &__img{
+        width: 600px;
+        height: 360px;
+        border-radius: 10px;
+    }
+
+    &__info__box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    &__info__btn{
+        width: 150px;
+        height: 40px;
+        background-color: gray;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}

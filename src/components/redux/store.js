@@ -1,15 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import movieReducer from './slice/MoviesSlice'
 
-import counrtyReducer from './slice/Country'
-
-
-
-const rootReducer = {
-    news:counrtyReducer
-}
+const rootReducer = combineReducers({
+    movies:movieReducer
+})
 
 const store = configureStore({
     reducer:rootReducer
 })
 
-export default store;
+export default store

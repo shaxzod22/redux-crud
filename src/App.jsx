@@ -1,20 +1,19 @@
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import NewsDinamicPage from './components/NewsDinamicPage'
-import NewsPage from './components/NewsPage'
+import DinamicPage from './components/DinamicPage'
+import MoviesPage from './components/MoviesPage'
 import './components/styles/Styles.scss'
 
 function App() {
   
   return (
-    <>
-   <BrowserRouter>
-   <Routes>
-    <Route path='/:id' element={<NewsDinamicPage/>}/>
-    <Route path='/' element={<NewsPage/>} />
-   </Routes>
-   </BrowserRouter>
-    </>
+    <BrowserRouter>
+    <Routes>
+    <Route path='/:id' element={<DinamicPage/>} />
+    <Route path='/' element={<MoviesPage/>} />
+    </Routes>
+    </BrowserRouter>
     )
   }
   
